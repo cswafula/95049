@@ -17,7 +17,7 @@ class CreateTableFees extends Migration
             $table->increments('id');
             $table->integer('StudentNo');
             $table->string('Date');
-            $table->string('DOB');
+            $table->string('DOB')->nullable;
             $table->float('Amount');
             $table->timestamps();
         });
